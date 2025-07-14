@@ -276,6 +276,11 @@ body {
         display: none;
     }
 }
+@media(max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
 .card:hover{
     background-color: rgba(211, 211, 211, 0.2);
     cursor: pointer;
