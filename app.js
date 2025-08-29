@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const songsList = [
-        { title:"Mostly Melody", src:"songs/MostlyMelody.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
-        { title:"A Gentle Fog Descends", src:"songs/AGentleFogDescends.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
-        { title:"A Most Joyous Occasion", src:"songs/AMostJoyousOccasion.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
-        {title:"Back In To The Toxic",src:"songs/BackInToTheToxic.mp3",location:"images/JCBL.jpeg", artist:"Joint C Beat Laboratory"},
-        {title:"Blooming Poison",src:"songs/BloomingPoison.mp3",location:"images/JCBL-2.jpeg", artist:"Joint C Beat Laboratory"},
-        {title:"Delete",src:"songs/Delete.mp3",location:"images/JCBL.jpeg", artist:"Joint C Beat Laboratory"}
+        { title:"Mostly Melody", src:"images/songs/MostlyMelody.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
+        { title:"A Gentle Fog Descends", src:"images/songs/AGentleFogDescends.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
+        { title:"A Most Joyous Occasion", src:"images/songs/AMostJoyousOccasion.mp3", location:"images/MostlyMelody.jpeg", artist:"Brylie Oxley" },
+        {title:"Back In To The Toxic",src:"images/songs/BackInToTheToxic.mp3",location:"images/JCBL.jpeg", artist:"Joint C Beat Laboratory"},
+        {title:"Blooming Poison",src:"images/songs/BloomingPoison.mp3",location:"images/JCBL-2.jpeg", artist:"Joint C Beat Laboratory"},
+        {title:"Delete",src:"images/songs/Delete.mp3",location:"images/JCBL.jpeg", artist:"Joint C Beat Laboratory"}
     ];
 
     songCards.forEach((card,index)=>{
