@@ -162,7 +162,7 @@ body {
     }
 
 }
-.card{
+.card-playlist{
     background-color: #121212;
     height: 300px;
     width: 250px;
@@ -170,9 +170,27 @@ body {
     transition-delay: 0s;
     transition: ease-in;
     transition-duration: 0.2s;
-
+    position:relative;
+    border-radius: 1rem;
 }
-.card img{
+.card-song{
+    background-color: #121212;
+    height: 300px;
+    width: 250px;
+    padding: 1rem;
+    transition-delay: 0s;
+    transition: ease-in;
+    transition-duration: 0.2s;
+    position:relative;
+    border-radius: 1rem;
+}
+.card-playlist img{
+    border-radius: 1rem;
+    height:200px;
+    width:100%;
+    padding:0.5rem;
+}
+.card-song img{
     border-radius: 1rem;
     height:200px;
     width:100%;
@@ -258,6 +276,23 @@ body {
 .bar{
     margin: 0 0.5rem 0 0.5rem;
     width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.bar::-webkit-slider-runnable-track{
+    background-color: antiquewhite;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
 }
 .song-options{
     display: flex;
@@ -281,9 +316,15 @@ body {
         display: none;
     }
 }
-.card:hover{
+.card-playlist:hover{
     background-color: rgba(211, 211, 211, 0.2);
     cursor: pointer;
+    border-radius: 0.5rem;
+}
+.card-song:hover{
+    background-color: rgba(211, 211, 211, 0.2);
+    cursor: pointer;
+    border-radius: 0.5rem;
 }
 .playlist{
     width:100%;
@@ -338,15 +379,19 @@ body {
     opacity: 0;
 }
 .cardbutton{
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
     background-color: rgb(0, 255, 50);
     position: absolute;
-    top: 150px;
-    left: 165px;
+    /* Position relative to the card, not fixed pixels */
+    bottom: 80px;  /* Distance from bottom of card */
+    right: 20px;   /* Distance from right edge of card */
     border-radius: 50%;
     opacity: 0;
     transition: 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .play{
     height:50px;
@@ -357,13 +402,31 @@ body {
     left: 180px;
 }
 .cardbutton_icon{
-    font-size: 2em;
-    position: absolute;
-    top: 9px;
-    left: 4px;
-    color:black;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    /* Remove absolute positioning from icon */
+    position: static;
+}
+.card-song:hover .cardbutton{
+    opacity: 0.8;
+}
+.card-playlist:hover .cardbutton{
+    opacity: 0.8;
+}
+
+.card-song .card-info{
+    padding-left: 60px;
+}
+
+.controls .player-controls .stopBtn{
+    height:25px;
+    width:25px;
     cursor: pointer;
 }
-.card:hover .cardbutton{
-    opacity: 0.8;
+.controls .player-controls .backBtn{
+    cursor: pointer;
+}
+.controls .player-controls .forwardBtn{
+    cursor: pointer;
 }
