@@ -18,7 +18,7 @@
         <div class="sidebar">
             <div class="nav">
 
-                <div class="nav-option">
+                <div class="nav-option" id="home">
                     <i class="fa-solid fa-house"></i>
                     <a href="#">Home</a>
                 </div>
@@ -121,8 +121,8 @@
                
                 <h2>Recently Played</h2> 
                 <div class="cards-container">
-                    <div class="card">
-                        <img src="assets/card1img.jpeg">
+                    <div class="card-playlist">
+                        <img src="assets/card1img.jpeg" class="card-image">
                         <p class="card-title">Top 50 - Global</p>
                         <p class="card-info">Your daily updates of the most played tracks</p>
                         <div class="cardbutton">
@@ -132,28 +132,28 @@
                 </div>
 
 
-                <h2>More Like Arijit Singh</h2>
+                <h2>Electronic</h2>
                 <div class="cards-container">
-                    <div class="card">
-                        <img src="assets/aashiqui2.jpg">
-                        <p class="card-title">Tum Hi Ho</p>
-                        <p class="card-info">Arijit Singh, Shreya Ghoshal</p>
+                    <div class="card-song">
+                        <img src="images/MostlyMelody.jpeg" class="card-image">
+                        <p class="card-title">Mostly Melody</p>
+                        <p class="card-info">Brylie Oxley</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/ApnaBanaLe.jpg">
-                        <p class="card-title">Apna Bana Le</p>
-                        <p class="card-info">Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya</p>
+                    <div class="card-song">
+                        <img src="images/MostlyMelody.jpeg" class="card-image">
+                        <p class="card-title">A Gentle Fog Descends</p>
+                        <p class="card-info">Brylie Oxley</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/aashiqui2.jpg">
-                        <p class="card-title">Chahun Main Ya Naa</p>
-                        <p class="card-info">Palak Mucchal, Arijit Singh</p>
+                    <div class="card-song">
+                        <img src="images/MostlyMelody.jpeg" class="card-image">
+                        <p class="card-title">A Most Joyous Occasion</p>
+                        <p class="card-info">Brylie Oxlie</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
@@ -163,26 +163,26 @@
 
                 <h2>Featured Charts</h2>
                 <div class="cards-container">
-                    <div class="card">
-                        <img src="assets/card5img.jpeg">
-                        <p class="card-title">Top Songs Global</p>
-                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    <div class="card-playlist">
+                        <img src="images/JCBL.jpeg" class="card-image">
+                        <p class="card-title">Back In To The Toxic</p>
+                        <p class="card-info">Joint C Beat Laboratory</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/card6img.jpeg">
-                        <p class="card-title">Top Songs India</p>
-                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    <div class="card-playlist">
+                        <img src="images/JCBL-2.jpeg" class="card-image">
+                        <p class="card-title">Blooming Poison</p>
+                        <p class="card-info">Joint C Beat Laboratory</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/GuitarSongs.jpeg">
-                        <p class="card-title">Relaxing Guitar Morning Songs</p>
-                        <p class="card-info">Soft Guitar Morning Mix</p>
+                    <div class="card-playlist">
+                        <img src="images/JCBL.jpeg" class="card-image">
+                        <p class="card-title">Delete</p>
+                        <p class="card-info">Joint C Beat Laboratory</p>
                         <div class="cardbutton">
                             <i class="fa-solid fa-play cardbutton_icon" ></i>
                         </div>
@@ -196,25 +196,25 @@
 
         <div class="music-player">
             <div class="playing-song">
-                <img src="assets/aashiqui2.jpg" class="image">
+                <img class="image">
                 <div class="playing-song-internals">
-                    <div class="song-title">Meri Aashiqui</div>
-                    <div class="song-artist">Palak Mucchal, Arijit Singh</div>
+                    <div class="song-title"></div>
+                    <div class="song-artist"></div>
 
                 </div>
             </div>
             <div class="controls">
                 <div class="player-controls">
                     <img src="assets/player_icon1.png">
-                    <img src="assets/player_icon2.png">
-                    <img src="assets/player_icon3.png" class="tochange">
-                    <img src="assets/player_icon4.png">
-                    <img src="assets/player_icon5.png">
+                    <img src="assets/player_icon2.png" class="backBtn">
+                    <img src="assets/player_icon3.png" class="stopBtn">
+                    <img src="assets/player_icon4.png" class="forwardBtn">
+                    <img src="assets/player_icon5.png" class="repeatBtn">
                 </div>
                 <div class="playback-bar">
                     <span class="curr-time">00:00</span>
-                    <input type="range" min="0" max="100" class="bar">
-                    <span class="tot-time">04:26</span>
+                    <input type="range" min="0" max="100" value="0" class="bar">
+                    <span class="tot-time">00:00</span>
                 </div>
             </div>
             <div class="song-options">
@@ -225,5 +225,6 @@
             </div>
         </div>
     </div>
+    <script src="spotifyjs.js"></script>
 </body>
 </html>
